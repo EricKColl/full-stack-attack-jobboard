@@ -62,3 +62,16 @@ footer {
   color: #6c757d;
   font-size: 0.9rem;
 }
+.table td,
+.table th {
+  vertical-align: middle;
+}
+
+.seccion-formulario h2,
+.seccion-listado h2 {
+  font-weight: 600;
+}
+
+.alert {
+  margin-bottom: 0;
+}

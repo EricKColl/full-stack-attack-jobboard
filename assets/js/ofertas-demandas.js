@@ -4,6 +4,7 @@ import {
   agregarPublicacion,
   eliminarPublicacionPorId
 } from "./datos.js";
+import { pintarUsuarioEnNavbar, configurarBotonCerrarSesion } from "./ui.js";
 
 // Elementos del DOM
 const formPublicacion = document.getElementById("form-publicacion");
@@ -17,33 +18,15 @@ const emailPublicacion = document.getElementById("email-publicacion");
 
 const tablaPublicacionesBody = document.getElementById("tabla-publicaciones-body");
 const mensajePublicacion = document.getElementById("mensaje-publicacion");
-const usuarioLogueadoNav = document.getElementById("usuario-logueado-nav");
 
 // Inicializar página
 function inicializarPublicaciones() {
-  mostrarUsuarioLogueadoEnNav();
+  pintarUsuarioEnNavbar();
+  configurarBotonCerrarSesion();
   pintarTablaPublicaciones();
   formPublicacion.addEventListener("submit", gestionarAltaPublicacion);
 }
 
-// Mostrar usuario logueado en navbar
-function mostrarUsuarioLogueadoEnNav() {
-  const usuarioGuardado = localStorage.getItem("usuarioLogueado");
-
-  if (!usuarioGuardado) {
-    usuarioLogueadoNav.textContent = "No has iniciado sesión";
-    return;
-  }
-
-  try {
-    const usuario = JSON.parse(usuarioGuardado);
-    usuarioLogueadoNav.textContent = `Sesión: ${usuario.email}`;
-  } catch (error) {
-    usuarioLogueadoNav.textContent = "No has iniciado sesión";
-  }
-}
-
-// Pintar tabla de publicaciones
 function pintarTablaPublicaciones() {
   if (publicaciones.length === 0) {
     tablaPublicacionesBody.innerHTML = `
@@ -89,7 +72,6 @@ function pintarTablaPublicaciones() {
   });
 }
 
-// Gestionar alta de publicación
 function gestionarAltaPublicacion(evento) {
   evento.preventDefault();
 
@@ -101,29 +83,16 @@ function gestionarAltaPublicacion(evento) {
   const descripcion = descripcionPublicacion.value.trim();
   const emailContacto = emailPublicacion.value.trim().toLowerCase();
 
-  // Validación básica
-  if (
-    !tipo ||
-    !titulo ||
-    !categoria ||
-    !autor ||
-    !ubicacion ||
-    !descripcion ||
-    !emailContacto
-  ) {
+  if (!tipo || !titulo || !categoria || !autor || !ubicacion || !descripcion || !emailContacto) {
     mostrarMensaje("Todos los campos son obligatorios.", "danger");
     return;
   }
 
   if (descripcion.length < 10) {
-    mostrarMensaje(
-      "La descripción debe tener al menos 10 caracteres.",
-      "danger"
-    );
+    mostrarMensaje("La descripción debe tener al menos 10 caracteres.", "danger");
     return;
   }
 
-  // Crear fecha simple YYYY-MM-DD
   const fechaActual = new Date().toISOString().split("T")[0];
 
   const nuevaPublicacion = {
@@ -145,7 +114,6 @@ function gestionarAltaPublicacion(evento) {
   formPublicacion.reset();
 }
 
-// Eliminar publicación
 function eliminarPublicacion(idPublicacion) {
   const eliminado = eliminarPublicacionPorId(idPublicacion);
 
@@ -158,7 +126,6 @@ function eliminarPublicacion(idPublicacion) {
   mostrarMensaje("Publicación eliminada correctamente.", "success");
 }
 
-// Mostrar mensajes Bootstrap
 function mostrarMensaje(texto, tipo) {
   mensajePublicacion.innerHTML = `
     <div class="alert alert-${tipo}" role="alert">

@@ -1,23 +1,23 @@
 import {
-  usuarios,
   publicaciones,
   obtenerTotalOfertas,
   obtenerTotalDemandas,
   obtenerTotalUsuarios
 } from "./datos.js";
+import { pintarUsuarioEnNavbar, configurarBotonCerrarSesion } from "./ui.js";
 
 // Elementos del DOM
 const totalOfertasElemento = document.getElementById("total-ofertas");
 const totalDemandasElemento = document.getElementById("total-demandas");
 const totalUsuariosElemento = document.getElementById("total-usuarios");
 const contenedorPublicaciones = document.getElementById("contenedor-publicaciones");
-const usuarioLogueadoNav = document.getElementById("usuario-logueado-nav");
 
 // Inicializar dashboard
 function inicializarDashboard() {
+  pintarUsuarioEnNavbar();
+  configurarBotonCerrarSesion();
   pintarResumen();
   pintarPublicaciones();
-  mostrarUsuarioLogueadoEnNav();
 }
 
 // Mostrar cifras resumen
@@ -71,25 +71,6 @@ function pintarPublicaciones() {
 
     contenedorPublicaciones.appendChild(columna);
   });
-}
-
-// Simulación de usuario logueado en navegación (todavía sin login real)
-function mostrarUsuarioLogueadoEnNav() {
-  // En pasos posteriores lo cambiaremos con el login real.
-  // De momento, si no hay nada guardado, mostramos el texto por defecto.
-  const usuarioGuardado = localStorage.getItem("usuarioLogueado");
-
-  if (!usuarioGuardado) {
-    usuarioLogueadoNav.textContent = "No has iniciado sesión";
-    return;
-  }
-
-  try {
-    const usuario = JSON.parse(usuarioGuardado);
-    usuarioLogueadoNav.textContent = `Sesión: ${usuario.email}`;
-  } catch (error) {
-    usuarioLogueadoNav.textContent = "No has iniciado sesión";
-  }
 }
 
 inicializarDashboard();

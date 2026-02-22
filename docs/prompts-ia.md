@@ -50,3 +50,13 @@
 - **Prompt usado**: Solicitud de desarrollo paso a paso de la pantalla de gestión de publicaciones con formulario, tabla dinámica, validaciones y eliminación de registros usando `datos.js`
 - **Respuesta resumida**: Se añadieron funciones auxiliares para publicaciones en `datos.js` y se implementó `ofertas-demandas.js` con renderizado dinámico, validaciones de formulario y borrado por ID
 - **Cómo se aplicó en el proyecto**: Se completó la interfaz de gestión de ofertas y demandas del prototipo con interacción JS y componentes Bootstrap
+
+
+
+## Prompt 7
+- **Fecha**: [pon la fecha de hoy]
+- **Herramienta IA**: ChatGPT
+- **Objetivo**: Refactorizar el frontend para reutilizar lógica común de interfaz y mejorar la experiencia de usuario con cierre de sesión
+- **Prompt usado**: Solicitud de mejora final del Producto 1 para centralizar la gestión de sesión en un script común, añadir botón de cerrar sesión y revisar la rúbrica antes de la entrega
+- **Respuesta resumida**: Se creó `ui.js` para reutilizar funciones de navbar/sesión, se añadió botón de cerrar sesión en las páginas y se preparó una checklist final de validación del producto
+- **Cómo se aplicó en el proyecto**: Se mejoró la calidad del código, la consistencia de la navegación y la presentación final del prototipo
