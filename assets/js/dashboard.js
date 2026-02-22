@@ -1,0 +1,1 @@
+// Lógica del dashboard (se completará en el siguiente paso)

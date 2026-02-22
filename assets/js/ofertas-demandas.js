@@ -1,0 +1,1 @@
+// Lógica de gestión de ofertas y demandas (se completará en el siguiente paso)

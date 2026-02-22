@@ -1,0 +1,1 @@
+// Datos comunes del proyecto (se completará en el siguiente paso)
