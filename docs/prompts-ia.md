@@ -22,3 +22,12 @@
 - **Prompt usado**: Solicitud de implementación paso a paso del Producto 1 para una plataforma de ofertas y demandas de empleo con HTML, CSS, Bootstrap y JavaScript
 - **Respuesta resumida**: Se generó un archivo `datos.js` con arrays de usuarios y publicaciones, funciones de conteo y un script `dashboard.js` que renderiza estadísticas y tarjetas de forma dinámica
 - **Cómo se aplicó en el proyecto**: Se incorporó la base de datos simulada en memoria y se implementó el dashboard principal dinámico
+
+
+## Prompt 4
+- **Fecha**: [pon la fecha de hoy]
+- **Herramienta IA**: ChatGPT
+- **Objetivo**: Implementar el login del prototipo con JavaScript validando usuarios desde `datos.js`
+- **Prompt usado**: Solicitud de creación paso a paso del login funcional con formulario, validación de email y contraseña, mensajes de error/éxito y guardado de sesión en localStorage
+- **Respuesta resumida**: Se implementó `login.js` con listener de submit, validación básica, búsqueda en el array `usuarios`, renderizado de mensajes y almacenamiento de sesión en `localStorage`
+- **Cómo se aplicó en el proyecto**: Se añadió el acceso básico al prototipo y se muestra el correo del usuario logueado en la barra de navegación
