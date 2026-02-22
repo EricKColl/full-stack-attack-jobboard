@@ -31,3 +31,12 @@
 - **Prompt usado**: Solicitud de creación paso a paso del login funcional con formulario, validación de email y contraseña, mensajes de error/éxito y guardado de sesión en localStorage
 - **Respuesta resumida**: Se implementó `login.js` con listener de submit, validación básica, búsqueda en el array `usuarios`, renderizado de mensajes y almacenamiento de sesión en `localStorage`
 - **Cómo se aplicó en el proyecto**: Se añadió el acceso básico al prototipo y se muestra el correo del usuario logueado en la barra de navegación
+
+
+## Prompt 5
+- **Fecha**: [pon la fecha de hoy]
+- **Herramienta IA**: ChatGPT
+- **Objetivo**: Implementar la gestión de usuarios en frontend con alta, listado, eliminación y validaciones básicas
+- **Prompt usado**: Solicitud de desarrollo paso a paso de la pantalla de usuarios con JavaScript modular, usando arrays de objetos en `datos.js`, renderizado de tabla y botones de eliminación
+- **Respuesta resumida**: Se añadieron funciones auxiliares en `datos.js` para gestionar usuarios y se implementó `usuarios.js` con validaciones, renderizado dinámico, eventos de formulario y borrado por ID
+- **Cómo se aplicó en el proyecto**: Se completó la interfaz de gestión de usuarios del prototipo con comportamiento dinámico y feedback visual al usuario

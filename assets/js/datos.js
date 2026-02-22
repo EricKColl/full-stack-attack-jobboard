@@ -88,3 +88,26 @@ export function obtenerTotalDemandas() {
 export function obtenerTotalUsuarios() {
   return usuarios.length;
 }
+// ====== Funciones de gestión de usuarios ======
+
+export function obtenerSiguienteIdUsuario() {
+  if (usuarios.length === 0) return 1;
+
+  const ids = usuarios.map((usuario) => usuario.id);
+  return Math.max(...ids) + 1;
+}
+
+export function agregarUsuario(nuevoUsuario) {
+  usuarios.push(nuevoUsuario);
+}
+
+export function eliminarUsuarioPorId(idUsuario) {
+  const indice = usuarios.findIndex((usuario) => usuario.id === idUsuario);
+
+  if (indice !== -1) {
+    usuarios.splice(indice, 1);
+    return true;
+  }
+
+  return false;
+}
