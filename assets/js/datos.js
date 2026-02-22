@@ -111,3 +111,28 @@ export function eliminarUsuarioPorId(idUsuario) {
 
   return false;
 }
+// ====== Funciones de gestión de publicaciones ======
+
+export function obtenerSiguienteIdPublicacion() {
+  if (publicaciones.length === 0) return 1;
+
+  const ids = publicaciones.map((publicacion) => publicacion.id);
+  return Math.max(...ids) + 1;
+}
+
+export function agregarPublicacion(nuevaPublicacion) {
+  publicaciones.push(nuevaPublicacion);
+}
+
+export function eliminarPublicacionPorId(idPublicacion) {
+  const indice = publicaciones.findIndex(
+    (publicacion) => publicacion.id === idPublicacion
+  );
+
+  if (indice !== -1) {
+    publicaciones.splice(indice, 1);
+    return true;
+  }
+
+  return false;
+}

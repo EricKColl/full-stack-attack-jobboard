@@ -6,6 +6,7 @@
 - **Respuesta resumida**: Se definió una estructura profesional del proyecto con páginas HTML, carpetas `assets`, `docs` y `evidencias`, además de `README.md`, `.gitignore` y organización de archivos JS por pantalla
 - **Cómo se aplicó en el proyecto**: Se creó la base del proyecto `full-stack-attack-jobboard` con una estructura limpia y preparada para desarrollar las 4 interfaces del producto 1
 
+
 ## Prompt 2
 - **Fecha**: [pon la fecha de hoy]
 - **Herramienta IA**: ChatGPT
@@ -40,3 +41,12 @@
 - **Prompt usado**: Solicitud de desarrollo paso a paso de la pantalla de usuarios con JavaScript modular, usando arrays de objetos en `datos.js`, renderizado de tabla y botones de eliminación
 - **Respuesta resumida**: Se añadieron funciones auxiliares en `datos.js` para gestionar usuarios y se implementó `usuarios.js` con validaciones, renderizado dinámico, eventos de formulario y borrado por ID
 - **Cómo se aplicó en el proyecto**: Se completó la interfaz de gestión de usuarios del prototipo con comportamiento dinámico y feedback visual al usuario
+
+
+## Prompt 6
+- **Fecha**: [pon la fecha de hoy]
+- **Herramienta IA**: ChatGPT
+- **Objetivo**: Implementar la gestión de ofertas y demandas con JavaScript (alta, listado y baja en memoria)
+- **Prompt usado**: Solicitud de desarrollo paso a paso de la pantalla de gestión de publicaciones con formulario, tabla dinámica, validaciones y eliminación de registros usando `datos.js`
+- **Respuesta resumida**: Se añadieron funciones auxiliares para publicaciones en `datos.js` y se implementó `ofertas-demandas.js` con renderizado dinámico, validaciones de formulario y borrado por ID
+- **Cómo se aplicó en el proyecto**: Se completó la interfaz de gestión de ofertas y demandas del prototipo con interacción JS y componentes Bootstrap
