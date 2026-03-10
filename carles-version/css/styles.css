@@ -1,0 +1,32 @@
+/*
+==============================================
+ESTILOS GENERALES DEL PROYECTO
+==============================================
+
+Este archivo añade una pequeña capa visual propia
+encima de Bootstrap para dar más personalidad
+a la aplicación.
+*/
+
+body {
+    background-color: #f5f7fa;
+}
+
+/* Tarjetas con pequeña animación al pasar el ratón */
+.card {
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.card:hover {
+    transform: translateY(-2px);
+}
+
+/* Marca de la aplicación */
+.navbar-brand {
+    letter-spacing: 0.5px;
+}
+
+/* Mejor aspecto visual para títulos principales */
+h1 {
+    letter-spacing: -0.5px;
+}

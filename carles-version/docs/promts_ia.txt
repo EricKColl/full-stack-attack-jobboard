@@ -1,0 +1,157 @@
+REGISTRO DE INTERACCIONES CON IA GENERATIVA
+Producto 1 – Desarrollo Frontend (JobConnect)
+
+Herramienta utilizada:
+- ChatGPT (modelo de lenguaje basado en IA)
+
+Objetivo del uso de IA:
+La IA generativa se ha utilizado como herramienta de apoyo durante el desarrollo del proyecto con los siguientes objetivos:
+
+- Comprender conceptos fundamentales de desarrollo frontend.
+- Resolver dudas técnicas relacionadas con HTML, CSS, Bootstrap y JavaScript.
+- Orientar la estructura del proyecto y la organización del código.
+- Guiar la implementación progresiva de las funcionalidades.
+- Mejorar la claridad y documentación del código.
+
+La IA se ha utilizado principalmente como recurso de aprendizaje y acompañamiento técnico durante el proceso de desarrollo.
+
+------------------------------------------------------------------
+
+1. CONTEXTO INICIAL DEL PROYECTO
+
+Prompt utilizado:
+"Vamos a ir poco a poco, poniendo contexto y explicando conceptos clave."
+
+Objetivo:
+Solicitar una explicación progresiva del proyecto y de los conceptos técnicos necesarios para abordar la actividad.
+
+Resultado:
+Se estableció una guía estructurada para desarrollar el proyecto paso a paso, priorizando la comprensión de los conceptos de frontend antes de la implementación.
+
+------------------------------------------------------------------
+
+2. DESARROLLO DEL DASHBOARD
+
+Prompts utilizados:
+"Vamos a empezar"
+
+"Antes de convertir esto en un dashboard más visual me gustaría entender mejor el DOM"
+
+"Añáde comentarios al código para documentación."
+
+Objetivo:
+Comprender el funcionamiento del DOM y aplicar manipulación dinámica de contenido en el dashboard principal.
+
+Resultado:
+Se implementó una página de dashboard que muestra estadísticas de usuarios, ofertas y demandas, así como un listado dinámico de publicaciones recientes. El código se documentó mediante comentarios para facilitar su comprensión futura.
+
+------------------------------------------------------------------
+
+3. IMPLEMENTACIÓN DEL SISTEMA DE LOGIN
+
+Prompt utilizado:
+"Me redirige al dashboard al logearme pero sin indicativos de que la sesión se ha iniciado con éxito."
+
+Objetivo:
+Implementar un sistema básico de autenticación simulada y reflejar visualmente el estado de sesión en la interfaz.
+
+Resultado:
+Se implementó un sistema de gestión de sesión mediante localStorage que permite mostrar el nombre del usuario en la barra de navegación y ofrecer la opción de cerrar sesión.
+
+------------------------------------------------------------------
+
+4. DESARROLLO DE LA GESTIÓN DE USUARIOS
+
+Prompts utilizados:
+
+"Necesito implementar una página de gestión de usuarios en JavaScript puro.
+
+La página debe permitir:
+- registrar nuevos usuarios mediante un formulario
+- mostrar los usuarios en una tabla dinámica
+- eliminar usuarios desde la tabla mediante botones
+
+Los datos se almacenan en un array de objetos JavaScript.
+
+Me gustaría que me orientaras sobre:
+- cómo renderizar la tabla dinámicamente usando el DOM
+- cómo asociar eventos a los botones de eliminar
+- cómo actualizar la interfaz después de modificar el array de usuarios."
+
+Objetivo:
+Desarrollar la funcionalidad de gestión de usuarios, incluyendo registro, visualización y eliminación.
+
+Resultado:
+Se implementó un formulario de creación de usuarios, una tabla dinámica con el listado de usuarios y la posibilidad de eliminar usuarios mediante botones asociados a eventos JavaScript.
+
+------------------------------------------------------------------
+
+5. DESARROLLO DE LA GESTIÓN DE OFERTAS Y DEMANDAS
+
+Prompt utilizado:
+
+"Quiero implementar una página de publicaciones laborales que permita gestionar ofertas y demandas.
+
+Cada publicación debe incluir:
+- tipo (oferta o demanda)
+- título
+- ubicación
+- descripción
+- usuario autor
+
+Los datos se guardan en un array de objetos.
+
+Me gustaría saber cuál es la mejor forma de:
+- generar dinámicamente las tarjetas de publicaciones en el DOM
+- diferenciar visualmente ofertas y demandas
+- añadir funcionalidad para eliminar publicaciones
+- reutilizar lógica similar a la utilizada en la gestión de usuarios."
+
+Objetivo:
+Implementar la creación y visualización de publicaciones laborales diferenciando entre ofertas y demandas.
+
+Resultado:
+Se desarrolló un formulario para crear publicaciones y un sistema de renderizado dinámico que muestra las publicaciones en la interfaz, permitiendo también su eliminación.
+
+------------------------------------------------------------------
+
+6. MEJORAS DE ORGANIZACIÓN DEL PROYECTO
+
+Prompts utilizados:
+
+"El proyecto frontend está creciendo y actualmente tengo varios archivos JavaScript y HTML en la misma carpeta.
+
+Me gustaría reorganizar el proyecto siguiendo buenas prácticas de desarrollo web.
+
+¿Podrías orientarme sobre:
+- cómo estructurar las carpetas del proyecto (html, css, js, documentación)
+- cómo separar responsabilidades entre archivos JavaScript
+- cómo centralizar la gestión de sesión en un archivo independiente
+- qué estructura sería recomendable para un proyecto frontend sencillo pero escalable?"
+
+Objetivo:
+Mejorar la estructura del proyecto para que sea más clara y escalable.
+
+Resultado:
+Se reorganizó el proyecto separando los archivos en diferentes carpetas (html, css, js y docs). También se centralizó la gestión de sesión en un archivo independiente (auth.js) para facilitar la reutilización del código.
+
+------------------------------------------------------------------
+
+7. CONCEPTOS APRENDIDOS CON APOYO DE IA
+
+Durante el desarrollo del proyecto se han reforzado los siguientes conceptos:
+
+- Estructura básica de páginas web con HTML5
+- Uso de CSS y Bootstrap para diseño visual
+- Manipulación del DOM con JavaScript
+- Gestión de eventos en JavaScript
+- Uso de arrays y objetos para representar datos
+- Renderizado dinámico de contenido
+- Gestión de sesión mediante localStorage
+- Organización básica de un proyecto frontend
+
+------------------------------------------------------------------
+
+CONCLUSIÓN
+
+La utilización de IA generativa ha servido como herramienta de apoyo para comprender conceptos técnicos y orientar el desarrollo del proyecto. El trabajo final ha sido revisado, adaptado y comprendido durante el proceso de implementación.
